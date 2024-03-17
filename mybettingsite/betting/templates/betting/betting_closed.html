@@ -1,0 +1,11 @@
+<!-- betting/templates/betting/betting_closed.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Betting Closed</h1>
+    <p>The betting period for "{{ match.name }}" has closed. Betting is only allowed until half an hour before the match starts.</p>
+    <a href="{% url 'betting:match_list' %}">Back to Matches</a>
+</div>
+{% endblock %}

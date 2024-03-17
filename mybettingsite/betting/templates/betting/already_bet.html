@@ -1,0 +1,20 @@
+<!-- betting/templates/betting/already_bet.html -->
+
+
+
+
+{% extends 'base.html' %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% block content %}
+<h2>Already Bet</h2>
+<p>You have already placed a bet on this match. You cannot submit another bet.</p>
+<a href="{% url 'betting:match_list' %}">Return to match list</a>
+{% endblock %}

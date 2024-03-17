@@ -1,0 +1,6 @@
+<h2>Leaderboard</h2>
+<ul>
+    {% for user in user_scores %}
+    <li>{{ user.username }}: {{ user.total_score }}</li>
+    {% endfor %}
+</ul>

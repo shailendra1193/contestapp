@@ -1,0 +1,30 @@
+<!-- betting/templates/betting/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Betting App{% endblock %}</title>
+    <!-- Add any CSS files here -->
+</head>
+<body>
+<header>
+    <!-- Navigation and site header content -->
+    <nav>
+        <a href="{% url 'betting:home' %}">Home</a>
+        <!-- Other navigation links -->
+    </nav>
+</header>
+
+<main>
+    {% block content %}
+    <!-- Page-specific content will go here -->
+    {% endblock %}
+</main>
+
+<footer>
+    <!-- Footer content -->
+    <p>© 2024 Betting App</p>
+</footer>
+</body>
+</html>

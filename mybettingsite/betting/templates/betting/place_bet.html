@@ -1,0 +1,12 @@
+<!-- betting/templates/betting/place_bet.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Place Bet for {{ match.name }}</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Place Bet</button>
+</form>
+{% endblock %}

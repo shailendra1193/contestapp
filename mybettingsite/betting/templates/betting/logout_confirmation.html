@@ -1,0 +1,9 @@
+<!-- betting/templates/betting/logout_confirmation.html -->
+
+{% extends 'betting/base.html' %}
+
+{% block content %}
+<h2>Logged Out</h2>
+<p>You have been successfully logged out.</p>
+<a href="{% url 'betting:home' %}">Return to Home</a>
+{% endblock %}

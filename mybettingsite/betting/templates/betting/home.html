@@ -1,0 +1,17 @@
+<!-- betting/templates/betting/home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the Betting App</h1>
+<p>This is your one-stop destination for all your betting needs!</p>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'betting:match_list' %}">Upcoming Matches</a></li>
+	<li><a href="{% url 'betting:place_bet' %}">Place Bet</a></li>
+        <li><a href="{% url 'betting:leaderboard' %}">Leaderboard</a></li>
+        <li><a href="{% url 'betting:logout_confirmation' %}">Logout</a></li>
+    </ul>
+</nav>
+{% endblock %}
