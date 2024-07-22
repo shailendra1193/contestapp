@@ -5,6 +5,8 @@ from . import views
 from django.contrib.auth.views import LogoutView
 from .views import logout_confirmation  
 
+#urls
+
 urlpatterns = [
     path('match_list/', views.match_list, name='match_list'),
     path('', views.home, name='home'),
